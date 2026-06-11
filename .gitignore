@@ -1,0 +1,22 @@
+# Ignore data files but keep the folders
+data/raw/*
+data/processed/*
+
+# Ignore common Python/IDE files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+*.env
+
+# Ignore Jupyter notebooks (if you use any later)
+.ipynb_checkpoints/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
