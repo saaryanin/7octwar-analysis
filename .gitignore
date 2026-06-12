@@ -1,21 +1,18 @@
-# Ignore data files but keep the folders
+# Ignore data files but keep the folders and .gitkeep files
 data/raw/*
 data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/.gitkeep
 
 # Ignore common Python/IDE files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-env/
 venv/
-ENV/
-.venv/
 *.env
-
-# Ignore Jupyter notebooks (if you use any later)
-.ipynb_checkpoints/
+.env
 
 # Ignore OS files
 .DS_Store
