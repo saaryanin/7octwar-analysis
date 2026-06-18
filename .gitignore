@@ -17,6 +17,9 @@ venv/
 *.env
 .env
 
+# Tableau temp/recovery files
+*.twbr
+
 # Ignore OS files
 .DS_Store
 Thumbs.db

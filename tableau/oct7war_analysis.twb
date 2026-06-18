@@ -1,0 +1,1037 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='oct7war_analysis' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_soldiers_by_region' inline='true' name='federated.00h38501ch87gb1c2kxc50b0fp1f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_soldiers_by_region' name='textscan.0e8kxua184lu6n16648qx0ag0d3n'>
+            <connection class='textscan' directory='C:/Users/yanin/Projects/7octwar-analysis/data/processed' filename='tableau_soldiers_by_region.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0e8kxua184lu6n16648qx0ag0d3n' name='tableau_soldiers_by_region.csv' table='[tableau_soldiers_by_region#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='region' ordinal='0' />
+            <column datatype='string' name='residence' ordinal='1' />
+            <column datatype='integer' name='soldiers_killed' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_soldiers_by_region.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[tableau_soldiers_by_region.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[tableau_soldiers_by_region.csv_47F1F847D24F49F184946787556ED399]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>residence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[residence]</local-name>
+            <parent-name>[tableau_soldiers_by_region.csv]</parent-name>
+            <remote-alias>residence</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[tableau_soldiers_by_region.csv_47F1F847D24F49F184946787556ED399]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>soldiers_killed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[soldiers_killed]</local-name>
+            <parent-name>[tableau_soldiers_by_region.csv]</parent-name>
+            <remote-alias>soldiers_killed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_soldiers_by_region.csv_47F1F847D24F49F184946787556ED399]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_soldiers_by_region.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_soldiers_by_region.csv_47F1F847D24F49F184946787556ED399]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Residence' datatype='string' name='[residence]' role='dimension' type='nominal' />
+      <column caption='Soldiers Killed' datatype='integer' name='[soldiers_killed]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/yanin/AppData/Local/Temp/TableauTemp/#TableauTemp_1v4exe10julg7d16586db1v9y5xa.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/18/2026 05:36:19 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_soldiers_by_region.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>residence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[residence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>residence</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_soldiers_by_region.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>344</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>soldiers_killed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[soldiers_killed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>soldiers_killed</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_soldiers_by_region.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_soldiers_by_region.csv' id='tableau_soldiers_by_region.csv_47F1F847D24F49F184946787556ED399'>
+            <properties context=''>
+              <relation connection='textscan.0e8kxua184lu6n16648qx0ag0d3n' name='tableau_soldiers_by_region.csv' table='[tableau_soldiers_by_region#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='region' ordinal='0' />
+                  <column datatype='string' name='residence' ordinal='1' />
+                  <column datatype='integer' name='soldiers_killed' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_monthly_killed_by_type' inline='true' name='federated.0jyy5t90zz9lub19rnv7j0z228ko' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_monthly_killed_by_type' name='textscan.1l1whv815jwfpt1aibbd801axtg0'>
+            <connection class='textscan' directory='C:/Users/yanin/Projects/7octwar-analysis/data/processed' filename='tableau_monthly_killed_by_type.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1l1whv815jwfpt1aibbd801axtg0' name='tableau_monthly_killed_by_type.csv' table='[tableau_monthly_killed_by_type#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='death_year' ordinal='0' />
+            <column datatype='integer' name='death_month' ordinal='1' />
+            <column datatype='string' name='role' ordinal='2' />
+            <column datatype='integer' name='count' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_monthly_killed_by_type.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[death_year]</local-name>
+            <parent-name>[tableau_monthly_killed_by_type.csv]</parent-name>
+            <remote-alias>death_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[death_month]</local-name>
+            <parent-name>[tableau_monthly_killed_by_type.csv]</parent-name>
+            <remote-alias>death_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>role</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[role]</local-name>
+            <parent-name>[tableau_monthly_killed_by_type.csv]</parent-name>
+            <remote-alias>role</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[tableau_monthly_killed_by_type.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_monthly_killed_by_type.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Death Month' datatype='integer' name='[death_month]' role='dimension' type='quantitative'>
+        <aliases>
+          <alias key='1' value='Jan' />
+          <alias key='2' value='Feb' />
+          <alias key='3' value='Mar' />
+          <alias key='4' value='Apr' />
+          <alias key='5' value='May' />
+          <alias key='6' value='Jun' />
+          <alias key='7' value='Jul' />
+          <alias key='8' value='Aug' />
+          <alias key='9' value='Sep' />
+          <alias key='10' value='Oct' />
+          <alias key='11' value='Nov' />
+          <alias key='12' value='Dec' />
+        </aliases>
+      </column>
+      <column caption='Death Year' datatype='integer' name='[death_year]' role='dimension' type='quantitative' />
+      <column caption='Role' datatype='string' name='[role]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/yanin/AppData/Local/Temp/TableauTemp/#TableauTemp_0gmor1o0sh6inb12skts400ng856.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/18/2026 05:36:14 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>death_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[death_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>death_year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_monthly_killed_by_type.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>death_month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[death_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>death_month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_monthly_killed_by_type.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>role</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[role]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>role</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_monthly_killed_by_type.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_monthly_killed_by_type.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_monthly_killed_by_type.csv' id='tableau_monthly_killed_by_type.csv_4EABE70376E74EFEB6678239C753FED0'>
+            <properties context=''>
+              <relation connection='textscan.1l1whv815jwfpt1aibbd801axtg0' name='tableau_monthly_killed_by_type.csv' table='[tableau_monthly_killed_by_type#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='death_year' ordinal='0' />
+                  <column datatype='integer' name='death_month' ordinal='1' />
+                  <column datatype='string' name='role' ordinal='2' />
+                  <column datatype='integer' name='count' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tableau_age_dist_by_role' inline='true' name='federated.12so8f81o0p1at15cfin1119viw2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_age_dist_by_role' name='textscan.03m59g613jeikr14n454a09b1qds'>
+            <connection class='textscan' directory='C:/Users/yanin/Projects/7octwar-analysis/data/processed' filename='tableau_age_dist_by_role.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03m59g613jeikr14n454a09b1qds' name='tableau_age_dist_by_role.csv' table='[tableau_age_dist_by_role#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='string' name='role' ordinal='1' />
+            <column datatype='integer' name='count' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_age_dist_by_role.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[tableau_age_dist_by_role.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>role</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[role]</local-name>
+            <parent-name>[tableau_age_dist_by_role.csv]</parent-name>
+            <remote-alias>role</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[tableau_age_dist_by_role.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tableau_age_dist_by_role.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Role' datatype='string' name='[role]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/yanin/AppData/Local/Temp/TableauTemp/#TableauTemp_0ku2mtb1hpncqp1d5gtvs1toy1y0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/18/2026 02:41:38 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_age_dist_by_role.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>role</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[role]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>role</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_age_dist_by_role.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_age_dist_by_role.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_age_dist_by_role.csv' id='tableau_age_dist_by_role.csv_99FD62208B024713B5DA469E6239C7D0'>
+            <properties context=''>
+              <relation connection='textscan.03m59g613jeikr14n454a09b1qds' name='tableau_age_dist_by_role.csv' table='[tableau_age_dist_by_role#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='string' name='role' ordinal='1' />
+                  <column datatype='integer' name='count' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age Distribution by Role'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_age_dist_by_role' name='federated.12so8f81o0p1at15cfin1119viw2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12so8f81o0p1at15cfin1119viw2'>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[role]' derivation='None' name='[none:role:nk]' pivot='key' type='nominal' />
+            <column caption='Role' datatype='string' name='[role]' role='dimension' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.12so8f81o0p1at15cfin1119viw2].[sum:count:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12so8f81o0p1at15cfin1119viw2].[none:role:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12so8f81o0p1at15cfin1119viw2].[sum:count:qk]</rows>
+        <cols>[federated.12so8f81o0p1at15cfin1119viw2].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{D8C03E92-A771-451C-BD0B-DFD6EEC2A588}' />
+    </worksheet>
+    <worksheet name='IDF Soliders Killed by Region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_soldiers_by_region' name='federated.00h38501ch87gb1c2kxc50b0fp1f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00h38501ch87gb1c2kxc50b0fp1f'>
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Soldiers Killed' datatype='integer' name='[soldiers_killed]' role='measure' type='quantitative' />
+            <column-instance column='[soldiers_killed]' derivation='Sum' name='[sum:soldiers_killed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.00h38501ch87gb1c2kxc50b0fp1f].[none:region:nk]' value='76' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00h38501ch87gb1c2kxc50b0fp1f].[sum:soldiers_killed:qk]</rows>
+        <cols>[federated.00h38501ch87gb1c2kxc50b0fp1f].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{19C679BF-8E2C-4479-8B40-6A69F0FC939B}' />
+    </worksheet>
+    <worksheet name='Monthly Cacualties by Role'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_monthly_killed_by_type' name='federated.0jyy5t90zz9lub19rnv7j0z228ko' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jyy5t90zz9lub19rnv7j0z228ko'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column caption='Death Month' datatype='integer' name='[death_month]' role='dimension' type='quantitative'>
+              <aliases>
+                <alias key='1' value='Jan' />
+                <alias key='2' value='Feb' />
+                <alias key='3' value='Mar' />
+                <alias key='4' value='Apr' />
+                <alias key='5' value='May' />
+                <alias key='6' value='Jun' />
+                <alias key='7' value='Jul' />
+                <alias key='8' value='Aug' />
+                <alias key='9' value='Sep' />
+                <alias key='10' value='Oct' />
+                <alias key='11' value='Nov' />
+                <alias key='12' value='Dec' />
+              </aliases>
+            </column>
+            <column caption='Death Year' datatype='integer' name='[death_year]' role='dimension' type='quantitative' />
+            <column-instance column='[death_month]' derivation='None' name='[none:death_month:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[death_year]' derivation='None' name='[none:death_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[role]' derivation='None' name='[none:role:nk]' pivot='key' type='nominal' />
+            <column caption='Role' datatype='string' name='[role]' role='dimension' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0jyy5t90zz9lub19rnv7j0z228ko].[sum:count:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:death_month:ok]' value='N' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:role:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0jyy5t90zz9lub19rnv7j0z228ko].[sum:count:qk]</rows>
+        <cols>([federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:death_year:ok] / [federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:death_month:ok])</cols>
+      </table>
+      <simple-id uuid='{40FD7A5D-30AE-4A6A-B420-F3CBF3B9C1F0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='Age Distribution by Role'>
+      <cards>
+        <edge name='left'>
+          <strip size='188'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12so8f81o0p1at15cfin1119viw2].[none:role:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ubo4uf0jrjtx317renw600gh8c4].[none:age_group:nk]</field>
+            <field>[federated.0ubo4uf0jrjtx317renw600gh8c4].[none:role:nk]</field>
+            <field>[federated.12so8f81o0p1at15cfin1119viw2].[none:role:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{EC660E2B-DA42-4916-884C-15AB0CEFD2C1}' />
+    </window>
+    <window class='worksheet' name='Monthly Cacualties by Role'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:role:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:death_month:qk]</field>
+            <field>[federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:death_year:qk]</field>
+            <field>[federated.0jyy5t90zz9lub19rnv7j0z228ko].[none:role:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C3B8C61C-DB93-40D4-BC2C-A24421DE68F6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='IDF Soliders Killed by Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00h38501ch87gb1c2kxc50b0fp1f].[none:region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F45BC75A-2C9B-413D-82DA-92F1E465643F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Age Distribution by Role' width='192'>
+      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
+      VdnJHlX/HyX34SuMKgHvAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='IDF Soliders Killed by Region' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Monthly Cacualties by Role' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

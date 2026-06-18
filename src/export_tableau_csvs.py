@@ -5,6 +5,7 @@ from sqlalchemy import create_engine
 VIEWS = [
     "tableau_monthly_killed_by_type",
     "tableau_age_dist_by_role",
+    "tableau_soldiers_by_region",
 ]
 
 
