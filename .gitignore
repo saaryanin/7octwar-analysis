@@ -1,3 +1,6 @@
+# Ignore generated SQLite databases
+*.db
+
 # Ignore data files but keep the folders and .gitkeep files
 data/raw/*
 data/processed/*
